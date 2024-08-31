@@ -103,7 +103,7 @@ const Login = () => {
                       onClick={copyEmail}
                       style={{ cursor: "pointer" }}
                     />
-                    test@test.com
+                    test@site.com
                   </Typography>
                   <TextField
                     label="Email"
@@ -123,7 +123,7 @@ const Login = () => {
                     >
                       <ContentCopyIcon onClick={copyPassword}
                       style={{ cursor: "pointer" }}/>
-                      Test123?
+                      aA?123456
                     </Typography>
                   <TextField
                     label="Password"
