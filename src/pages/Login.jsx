@@ -39,12 +39,12 @@ const Login = () => {
   const {user} = useSelector(state => state.auth)
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("test@test.com")
+    navigator.clipboard.writeText("test@site.com")
     toastSuccessNotify("Email copied!");
   }
 
   const copyPassword = () => {
-    navigator.clipboard.writeText("Test123?")
+    navigator.clipboard.writeText("aA?123456")
     toastSuccessNotify("Password copied!");
   }
 
