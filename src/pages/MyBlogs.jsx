@@ -14,12 +14,12 @@ const MyBlog = () => {
   const dispatch = useDispatch();
 
 
-  useEffect(() => {
-    if (user.username) {
-      getMyBlogs(user?.userId);
-    }
-    dispatch(setDelNav(true))
-  }, []);
+  // useEffect(() => {
+  //   if (user.username) {
+  //     getMyBlogs(user?.userId);
+  //   }
+  //   dispatch(setDelNav(true))
+  // }, []);
 
   return (
     <>
