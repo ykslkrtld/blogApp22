@@ -30,7 +30,7 @@ const Dashboard = () => {
     <>
     <Box mt={3}></Box>
       <Grid container gap={2} justifyContent={"center"} maxWidth={"1500px"} margin={"auto"}>
-        {blogs.map((blog) => (
+        {blogs.filter((blog) => blog?.isPublish ).map((blog) => (
           <Grid item key={blog._id}>
             <BlogCard blog={blog} currentPage={currentPage} />
           </Grid>
