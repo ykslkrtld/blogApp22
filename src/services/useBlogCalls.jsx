@@ -29,10 +29,10 @@ const useBlogCalls = () => {
     }
   };
 
-  const getMyBlogs = async (id, page = 1) => {
+  const getMyBlogs = async (id) => {
     dispatch(fetchStart());
     try {
-      const res = await axiosToken(`/blogs?author=${id}&limit=6&sort[createdAt]=desc&page=${page}`);
+      const res = await axiosToken(`/blogs?author=${id}`);
       dispatch(getMyBlogSuccess(res.data));
     } catch (error) {
       dispatch(fetchFail());
