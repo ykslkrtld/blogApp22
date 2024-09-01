@@ -9,14 +9,14 @@ const MyBlog = () => {
 
   const { blogs  } = useSelector((state) => state.getBlog);
   const { user  } = useSelector((state) => state.auth);
-  const { getMyBlogs } = useBlogCalls();
+  const { getMyBlogs, getBlogs } = useBlogCalls();
   const [ publish, setPublish ] = useState(true)
   const dispatch = useDispatch();
 
 
   useEffect(() => {
     if (user.username) {
-      getMyBlogs(user?.userId);
+      getBlogs();
     }
     dispatch(setDelNav(true))
   }, []);
